@@ -8,6 +8,8 @@ import 'package:get/get.dart';
 import 'package:mapon/Constants/ColorConstants.dart';
 import 'package:mapon/Constants/button.dart';
 import 'package:mapon/Controller/Maincontrollers.dart';
+import 'package:mapon/Views/EnterNewPassword.dart';
+import 'package:mapon/Views/ForgotPasswordScreen.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 class ForgotPasswordOTP extends StatelessWidget {
@@ -189,7 +191,7 @@ class ForgotPasswordOTP extends StatelessWidget {
                         buttonName: "Confirm",
                         colorButton: ColorConstants.ButtonColor,
                         funcname: () {
-                          // Get.to(() => SupportScreen2());
+                          Get.to(() => EnterNewPassword());
                         }),
                   ),
                 ),

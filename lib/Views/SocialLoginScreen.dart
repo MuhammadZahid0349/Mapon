@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 import 'package:mapon/Constants/ColorConstants.dart';
+import 'package:mapon/Views/LoginScreen.dart';
 import 'package:mapon/Views/SupportScreens/supportScreen.dart';
 import 'package:velocity_x/velocity_x.dart';
 
@@ -23,12 +24,17 @@ class SocialLoginScreen extends StatelessWidget {
                   color: ColorConstants.CircleColor, shape: BoxShape.circle),
             ),
             100.h.heightBox,
-            "Log In"
-                .text
-                .size(32.sp)
-                .fontWeight(FontWeight.w600)
-                .color(Colors.black)
-                .make(),
+            GestureDetector(
+              onTap: () {
+                Get.to(() => LoginScreen());
+              },
+              child: "Log In"
+                  .text
+                  .size(32.sp)
+                  .fontWeight(FontWeight.w600)
+                  .color(Colors.black)
+                  .make(),
+            ),
             95.h.heightBox,
             Row(
               mainAxisAlignment: MainAxisAlignment.center,

@@ -39,7 +39,7 @@ class MyApp extends StatelessWidget {
         builder: (context, child) {
           return GetMaterialApp(
             builder: EasyLoading.init(),
-            home: PlannerScreen(),
+            home: SplashScrren(),
             debugShowCheckedModeBanner: false,
           );
         });

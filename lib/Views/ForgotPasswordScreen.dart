@@ -5,6 +5,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:mapon/Constants/ColorConstants.dart';
 import 'package:mapon/Constants/button.dart';
+import 'package:mapon/Views/ForgotPasswordOtp.dart';
+import 'package:mapon/Views/SupportScreens/supportScreen2.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 class ForgotScreen extends StatelessWidget {
@@ -125,7 +127,7 @@ class ForgotScreen extends StatelessWidget {
                         buttonName: "Send",
                         colorButton: ColorConstants.ButtonColor,
                         funcname: () {
-                          // Get.to(() => SupportScreen2());
+                          Get.to(() => ForgotPasswordOTP());
                         }),
                   ),
                 ),

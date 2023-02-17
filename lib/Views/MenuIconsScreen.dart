@@ -5,6 +5,9 @@ import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:mapon/Constants/ColorConstants.dart';
 import 'package:mapon/Constants/button.dart';
 import 'package:mapon/Controller/Maincontrollers.dart';
+import 'package:mapon/Views/LocationInfoScreen.dart';
+import 'package:mapon/Views/PlannerScreen.dart';
+import 'package:mapon/Views/SearchScreen.dart';
 import 'package:velocity_x/velocity_x.dart';
 
 class MenuScreen extends StatelessWidget {
@@ -49,10 +52,16 @@ class MenuScreen extends StatelessWidget {
               GButton(
                 icon: Icons.location_off,
                 text: "Create",
+                onPressed: () {
+                  Get.to(() => SearchScreen());
+                },
               ),
               GButton(
                 icon: Icons.location_city_sharp,
                 text: "Create",
+                onPressed: () {
+                  Get.to(() => LocationInfoScreen());
+                },
               ),
               GButton(
                 icon: Icons.location_history_sharp,
@@ -139,5 +148,4 @@ class MenuScreen extends StatelessWidget {
       ),
     );
   }
-
 }

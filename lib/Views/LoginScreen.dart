@@ -5,6 +5,8 @@ import 'package:mapon/Constants/ColorConstants.dart';
 import 'package:mapon/Constants/button.dart';
 import 'package:mapon/Constants/customized_textformfield.dart';
 import 'package:mapon/Views/ForgotPasswordScreen.dart';
+import 'package:mapon/Views/MainScreen.dart';
+import 'package:mapon/Views/MenuIconsScreen.dart';
 import 'package:mapon/Views/SignUpScreen.dart';
 import 'package:mapon/Views/SupportScreens/supportScreen.dart';
 import 'package:velocity_x/velocity_x.dart';
@@ -139,7 +141,7 @@ class LoginScreen extends StatelessWidget {
                         buttonName: "Log In",
                         colorButton: ColorConstants.ButtonColor,
                         funcname: () {
-                          // Get.to(() => SocialLoginScreen());
+                          Get.to(() => MenuScreen());
                         }),
                   ),
                 ),

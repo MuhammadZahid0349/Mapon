@@ -115,7 +115,7 @@ class SignUpScreen extends StatelessWidget {
                         buttonName: "Sign Up",
                         colorButton: ColorConstants.ButtonColor,
                         funcname: () {
-                          // Get.to(() => SocialLoginScreen());
+                          Get.to(() => LoginScreen());
                         }),
                   ),
                 ),
